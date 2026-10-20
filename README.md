@@ -11,30 +11,7 @@ is prompted with the class name only, and the caption and pseudo mask given to t
 are derived from its predicted boxes.
 
 <img src=images/framework.png width=800 />
-```
-## Code and paper
 
-| Paper | Code |
-|---|---|
-| 3.3 SCGM: attribute extraction, curriculum captions, object-aware phrase assignment | `semcurseg/scgm/attributes.py`, `tools/build_scgm_captions.py` |
-| 3.3 SCGM: curriculum schedule (epochs 0-9 / 10-24 / 25+) | `semcurseg/scgm/curriculum.py` |
-| 3.3 SCGM: phrase-specific loss weighting, w_k proportional to 1/a_k | `semcurseg/scgm/phrase_weighting.py` |
-| 3.4 CG-TVCC (Grounding DINO Swin-T) | `configs/cgtvcc_polyp.py`, `configs/cgtvcc_brain.py`, `tools/train_cgtvcc.py` |
-| 3.5 SAM Adapt: HCAE, edge prompt, uncertainty, NBIS, HFNM | `semcurseg/sam_adapt/`, `tools/train_sam_adapt.py` |
-| Stage 1 inference: pseudo masks and captions from predicted boxes | `tools/stage1_inference.py` |
-| 3.6 APFO | `semcurseg/segmentor/apfo.py` |
-| 3.7 TVHA and the attention decoder | `semcurseg/segmentor/tvha.py`, `semcurseg/segmentor/model.py` |
-| 3.8 Training objective (Dice + BCE) | `semcurseg/segmentor/loss.py`, `tools/train_segmentor.py` |
-| 4.2 mIoU, mDice, HD95 | `semcurseg/metrics.py`, `tools/test_segmentor.py`, `tools/eval_hd95.py` |
-| 4.3 Implementation details | defaults of the configs and of the scripts in `tools/` |
-```
-```
-configs/           CG-TVCC configs (MMDetection 3.3.0)
-semcurseg/         scgm/, sam_adapt/, segmentor/, metrics.py
-tools/             one script per step of the pipeline (below)
-third_party/       Segment Anything
-images/            figures
-```
 
 ## Installation
 
