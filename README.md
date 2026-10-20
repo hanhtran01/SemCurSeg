@@ -120,16 +120,6 @@ python tools/eval_hd95.py --gt data/polyp/test/masks --pred work_dirs/segmentor_
 `test_segmentor.py` reports mIoU and mDice averaged over images; `eval_hd95.py` computes HD95
 between mask boundaries at the ground-truth resolution.
 
-## Ablations
-
-| Experiment | Setting |
-|---|---|
-| Table 5, without APFO | `--no-apfo` in `train_segmentor.py` and `test_segmentor.py` |
-| Table 5, "+SCGM" (no pixel-level masks) | omit `--sam-adapt` in `stage1_inference.py` (original SAM), then train Stage 2 with `--no-apfo` |
-| Table 6, mask budget | `--mask-ratio 0.2 / 0.4 / 0.6 / 0.8 / 1.0` in `train_sam_adapt.py` |
-| SAM Adapt modules | `--no-hcae`, `--no-edge-prompt`, `--no-uncertainty`, `--no-nbis`, `--no-hfnm` |
-| without curriculum | remove `CurriculumPhraseHook` from the config and set `max_phrase_level=2` |
-| without phrase weighting | `use_phrase_weighting=False` in the config |
 
 ## License
 
