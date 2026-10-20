@@ -28,7 +28,7 @@ https://github.com/open-mmlab/mmdetection
 
 Segment Anything (Meta Platforms, Inc.)
 https://github.com/facebookresearch/segment-anything
-  third_party/segment_anything/ is an unmodified copy.
+  segment_anything/ is an unmodified copy.
 
 Written for SemCurSeg: semcurseg/scgm/, semcurseg/sam_adapt/, semcurseg/segmentor/apfo.py,
 semcurseg/metrics.py (HD95), tools/build_scgm_captions.py, tools/train_sam_adapt.py,
