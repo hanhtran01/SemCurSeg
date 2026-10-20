@@ -14,7 +14,7 @@ are derived from its predicted boxes.
 <img src=images/framework.png width=800 />
 
 ## Code and paper
-
+```
 | Paper | Code |
 |---|---|
 | 3.3 SCGM: attribute extraction, curriculum captions, object-aware phrase assignment | `semcurseg/scgm/attributes.py`, `tools/build_scgm_captions.py` |
@@ -28,7 +28,7 @@ are derived from its predicted boxes.
 | 3.8 Training objective (Dice + BCE) | `semcurseg/segmentor/loss.py`, `tools/train_segmentor.py` |
 | 4.2 mIoU, mDice, HD95 | `semcurseg/metrics.py`, `tools/test_segmentor.py`, `tools/eval_hd95.py` |
 | 4.3 Implementation details | defaults of the configs and of the scripts in `tools/` |
-
+```
 ```
 configs/           CG-TVCC configs (MMDetection 3.3.0)
 semcurseg/         scgm/, sam_adapt/, segmentor/, metrics.py
