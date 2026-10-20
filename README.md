@@ -1,6 +1,5 @@
 # SemCurSeg: Semantic Curriculum Grounding for Text-Guided Weakly Supervised Segmentation
 
-Code for SemCurSeg (anonymous submission under review).
 
 SemCurSeg trains a text-guided lesion segmentation network from bounding boxes and the masks of a
 small fraction of the training images. In Stage 1, the Semantic Curriculum Grounding Module (SCGM)
@@ -12,9 +11,9 @@ is prompted with the class name only, and the caption and pseudo mask given to t
 are derived from its predicted boxes.
 
 <img src=images/framework.png width=800 />
-
-## Code and paper
 ```
+## Code and paper
+
 | Paper | Code |
 |---|---|
 | 3.3 SCGM: attribute extraction, curriculum captions, object-aware phrase assignment | `semcurseg/scgm/attributes.py`, `tools/build_scgm_captions.py` |
